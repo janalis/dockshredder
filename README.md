@@ -1,9 +1,11 @@
 DockShredder
 ============
 
+```
 licence: MIT
 language: Swift
 platform: Mac OSX 10.10+
+```
 
 DockShredder is a GUI application using dd command-line utility.
 It aims to be compliant with the instructions of the Operating Manual NSIP (DoD 5220.22-M).
