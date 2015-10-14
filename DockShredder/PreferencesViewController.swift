@@ -8,8 +8,8 @@
 
 import Cocoa
 
-class PreferencesViewController: NSViewController {
-    
+class PreferencesViewController: NSViewController
+{    
     /**
      * Click on launch at login option
      *

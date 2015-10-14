@@ -8,8 +8,8 @@
 
 import Foundation
 
-class Startup {
-    
+class Startup
+{    
     /**
      * Application is in startup items
      *

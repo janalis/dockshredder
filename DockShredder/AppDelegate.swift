@@ -9,8 +9,8 @@
 import Cocoa
 
 @NSApplicationMain
-class AppDelegate: NSObject, NSApplicationDelegate {
-    
+class AppDelegate: NSObject, NSApplicationDelegate
+{    
     var icon: Icon = Icon()
     
     /**

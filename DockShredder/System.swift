@@ -8,8 +8,8 @@
 
 import Cocoa
 
-class System {
-    
+class System
+{    
     /**
      * Confirm
      *

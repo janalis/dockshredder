@@ -8,14 +8,18 @@
 
 import Foundation
 
-extension String {
-    var localized: String {
+extension String
+{
+    var localized: String
+    {
         return NSLocalizedString(self, tableName: nil, bundle: NSBundle.mainBundle(), value: "", comment: "")
     }
 }
 
-extension Int {
-    init(_ value: Bool){
+extension Int
+{
+    init(_ value: Bool)
+    {
         if value {
             self.init(1)
         } else {

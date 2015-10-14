@@ -8,8 +8,8 @@
 
 import Cocoa
 
-class Icon: NSObject {
-    
+class Icon: NSObject
+{    
     var current: Int = 0
     let frameset: [String] = ["frame0", "frame1", "frame2", "frame3", "frame4", "frame5", "frame6", "frame7", "frame8", "frame9"]
     var timer: NSTimer = NSTimer()

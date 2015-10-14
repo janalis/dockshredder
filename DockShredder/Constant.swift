@@ -8,10 +8,9 @@
 
 import Foundation
 
-class Constant {
-    
+class Constant
+{
     static let optionLaunchAtLogin: String = "DockShredderLaunchAtLogin"
     static let optionAskForConfirmationBeforeDeletion: String = "DockShredderAskForConfirmationBeforeDeletion"
     static let optionSendNotificationAfterDeletion: String = "DockShredderSendNotificationAfterDeletion"
-
 }
