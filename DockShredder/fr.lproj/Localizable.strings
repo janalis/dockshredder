@@ -1,0 +1,14 @@
+/* 
+  DockShredder.strings
+  DockShredder
+
+  Created by Pierre Hennequart on 12/10/2015.
+  Copyright © 2015 Janalis. All rights reserved.
+*/
+"confirm.delete.file" = "Les données du fichier ne pourront pas être récupérées. Continuer ?";
+"confirm.delete.files" = "Les données des fichiers ne pourront pas être récupérées. Continuer ?";
+"confirm.option.startup" = "L'application a été ajoutée à la liste d'ouverture automatique.\nPour l'activer, rendez-vous dans Préférences système > Utilisateurs > Ouverture.";
+"alert.file.deleted" = "Le fichier a été supprimé avec succès !";
+"alert.files.deleted" = "Les fichiers ont été supprimés avec succès !";
+"button.ok" = "OK";
+"button.cancel" = "Annuler";

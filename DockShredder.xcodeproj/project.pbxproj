@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8FBA9B0E1BCD91C100DE135B /* Startup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBA9B0D1BCD91C100DE135B /* Startup.swift */; settings = {ASSET_TAGS = (); }; };
+		8FBA9B101BCD99D800DE135B /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBA9B0F1BCD99D800DE135B /* System.swift */; settings = {ASSET_TAGS = (); }; };
+		8FBA9B121BCD9A6400DE135B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBA9B111BCD9A6400DE135B /* Extensions.swift */; settings = {ASSET_TAGS = (); }; };
+		8FBA9B141BCE53B000DE135B /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBA9B131BCE53B000DE135B /* Icon.swift */; settings = {ASSET_TAGS = (); }; };
+		8FBA9B161BCE548700DE135B /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBA9B151BCE548700DE135B /* Constant.swift */; settings = {ASSET_TAGS = (); }; };
+		8FBA9B181BCE5E0300DE135B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FBA9B171BCE5E0300DE135B /* Cocoa.framework */; };
+		8FBA9B1A1BCE5E0C00DE135B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FBA9B191BCE5E0C00DE135B /* Foundation.framework */; };
+		8FBA9B281BCE696000DE135B /* frame0.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FBA9B1E1BCE696000DE135B /* frame0.png */; settings = {ASSET_TAGS = (); }; };
+		8FBA9B291BCE696000DE135B /* frame1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FBA9B1F1BCE696000DE135B /* frame1.png */; settings = {ASSET_TAGS = (); }; };
+		8FBA9B2A1BCE696000DE135B /* frame2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FBA9B201BCE696000DE135B /* frame2.png */; settings = {ASSET_TAGS = (); }; };
+		8FBA9B2B1BCE696000DE135B /* frame3.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FBA9B211BCE696000DE135B /* frame3.png */; settings = {ASSET_TAGS = (); }; };
+		8FBA9B2C1BCE696000DE135B /* frame4.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FBA9B221BCE696000DE135B /* frame4.png */; settings = {ASSET_TAGS = (); }; };
+		8FBA9B2D1BCE696000DE135B /* frame5.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FBA9B231BCE696000DE135B /* frame5.png */; settings = {ASSET_TAGS = (); }; };
+		8FBA9B2E1BCE696000DE135B /* frame6.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FBA9B241BCE696000DE135B /* frame6.png */; settings = {ASSET_TAGS = (); }; };
+		8FBA9B2F1BCE696000DE135B /* frame7.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FBA9B251BCE696000DE135B /* frame7.png */; settings = {ASSET_TAGS = (); }; };
+		8FBA9B301BCE696000DE135B /* frame8.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FBA9B261BCE696000DE135B /* frame8.png */; settings = {ASSET_TAGS = (); }; };
+		8FBA9B311BCE696000DE135B /* frame9.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FBA9B271BCE696000DE135B /* frame9.png */; settings = {ASSET_TAGS = (); }; };
+		8FC57F8D1BCBF7D8004E3E4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC57F8C1BCBF7D8004E3E4A /* AppDelegate.swift */; };
+		8FC57F8F1BCBF7D8004E3E4A /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC57F8E1BCBF7D8004E3E4A /* PreferencesViewController.swift */; };
+		8FC57F911BCBF7D8004E3E4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FC57F901BCBF7D8004E3E4A /* Assets.xcassets */; };
+		8FC57F941BCBF7D8004E3E4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FC57F921BCBF7D8004E3E4A /* Main.storyboard */; };
+		8FC57F9F1BCBF7D8004E3E4A /* DockShredderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC57F9E1BCBF7D8004E3E4A /* DockShredderTests.swift */; };
+		8FC57FAA1BCBF7D8004E3E4A /* DockShredderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC57FA91BCBF7D8004E3E4A /* DockShredderUITests.swift */; };
+		8FC57FB91BCC1B21004E3E4A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8FC57FBB1BCC1B21004E3E4A /* Localizable.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8FC57F9B1BCBF7D8004E3E4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FC57F811BCBF7D8004E3E4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FC57F881BCBF7D8004E3E4A;
+			remoteInfo = DockShredder;
+		};
+		8FC57FA61BCBF7D8004E3E4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FC57F811BCBF7D8004E3E4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FC57F881BCBF7D8004E3E4A;
+			remoteInfo = DockShredder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8FBA9B011BCD40DF00DE135B /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8FBA9B031BCD40E500DE135B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8FBA9B061BCD490800DE135B /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = fr; path = fr.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8FBA9B071BCD490800DE135B /* de */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = de; path = de.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8FBA9B091BCD491A00DE135B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8FBA9B0A1BCD492500DE135B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8FBA9B0D1BCD91C100DE135B /* Startup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Startup.swift; sourceTree = "<group>"; };
+		8FBA9B0F1BCD99D800DE135B /* System.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = System.swift; sourceTree = "<group>"; };
+		8FBA9B111BCD9A6400DE135B /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		8FBA9B131BCE53B000DE135B /* Icon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
+		8FBA9B151BCE548700DE135B /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		8FBA9B171BCE5E0300DE135B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		8FBA9B191BCE5E0C00DE135B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8FBA9B1E1BCE696000DE135B /* frame0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = frame0.png; path = ../../frame0.png; sourceTree = "<group>"; };
+		8FBA9B1F1BCE696000DE135B /* frame1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = frame1.png; path = ../../frame1.png; sourceTree = "<group>"; };
+		8FBA9B201BCE696000DE135B /* frame2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = frame2.png; path = ../../frame2.png; sourceTree = "<group>"; };
+		8FBA9B211BCE696000DE135B /* frame3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = frame3.png; path = ../../frame3.png; sourceTree = "<group>"; };
+		8FBA9B221BCE696000DE135B /* frame4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = frame4.png; path = ../../frame4.png; sourceTree = "<group>"; };
+		8FBA9B231BCE696000DE135B /* frame5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = frame5.png; path = ../../frame5.png; sourceTree = "<group>"; };
+		8FBA9B241BCE696000DE135B /* frame6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = frame6.png; path = ../../frame6.png; sourceTree = "<group>"; };
+		8FBA9B251BCE696000DE135B /* frame7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = frame7.png; path = ../../frame7.png; sourceTree = "<group>"; };
+		8FBA9B261BCE696000DE135B /* frame8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = frame8.png; path = ../../frame8.png; sourceTree = "<group>"; };
+		8FBA9B271BCE696000DE135B /* frame9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = frame9.png; path = ../../frame9.png; sourceTree = "<group>"; };
+		8FC57F891BCBF7D8004E3E4A /* DockShredder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DockShredder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FC57F8C1BCBF7D8004E3E4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8FC57F8E1BCBF7D8004E3E4A /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
+		8FC57F901BCBF7D8004E3E4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8FC57F951BCBF7D8004E3E4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FC57F9A1BCBF7D8004E3E4A /* DockShredderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DockShredderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FC57F9E1BCBF7D8004E3E4A /* DockShredderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DockShredderTests.swift; sourceTree = "<group>"; };
+		8FC57FA01BCBF7D8004E3E4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FC57FA51BCBF7D8004E3E4A /* DockShredderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DockShredderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FC57FA91BCBF7D8004E3E4A /* DockShredderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DockShredderUITests.swift; sourceTree = "<group>"; };
+		8FC57FAB1BCBF7D8004E3E4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8FC57F861BCBF7D8004E3E4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FBA9B1A1BCE5E0C00DE135B /* Foundation.framework in Frameworks */,
+				8FBA9B181BCE5E0300DE135B /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FC57F971BCBF7D8004E3E4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FC57FA21BCBF7D8004E3E4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8FBA9B1D1BCE694400DE135B /* frames */ = {
+			isa = PBXGroup;
+			children = (
+				8FBA9B1E1BCE696000DE135B /* frame0.png */,
+				8FBA9B1F1BCE696000DE135B /* frame1.png */,
+				8FBA9B201BCE696000DE135B /* frame2.png */,
+				8FBA9B211BCE696000DE135B /* frame3.png */,
+				8FBA9B221BCE696000DE135B /* frame4.png */,
+				8FBA9B231BCE696000DE135B /* frame5.png */,
+				8FBA9B241BCE696000DE135B /* frame6.png */,
+				8FBA9B251BCE696000DE135B /* frame7.png */,
+				8FBA9B261BCE696000DE135B /* frame8.png */,
+				8FBA9B271BCE696000DE135B /* frame9.png */,
+			);
+			name = frames;
+			sourceTree = "<group>";
+		};
+		8FC57F801BCBF7D8004E3E4A = {
+			isa = PBXGroup;
+			children = (
+				8FBA9B191BCE5E0C00DE135B /* Foundation.framework */,
+				8FBA9B171BCE5E0300DE135B /* Cocoa.framework */,
+				8FC57F8B1BCBF7D8004E3E4A /* DockShredder */,
+				8FC57F9D1BCBF7D8004E3E4A /* DockShredderTests */,
+				8FC57FA81BCBF7D8004E3E4A /* DockShredderUITests */,
+				8FC57F8A1BCBF7D8004E3E4A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8FC57F8A1BCBF7D8004E3E4A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8FC57F891BCBF7D8004E3E4A /* DockShredder.app */,
+				8FC57F9A1BCBF7D8004E3E4A /* DockShredderTests.xctest */,
+				8FC57FA51BCBF7D8004E3E4A /* DockShredderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8FC57F8B1BCBF7D8004E3E4A /* DockShredder */ = {
+			isa = PBXGroup;
+			children = (
+				8FBA9B1D1BCE694400DE135B /* frames */,
+				8FC57F8C1BCBF7D8004E3E4A /* AppDelegate.swift */,
+				8FC57FBB1BCC1B21004E3E4A /* Localizable.strings */,
+				8FC57F8E1BCBF7D8004E3E4A /* PreferencesViewController.swift */,
+				8FC57F901BCBF7D8004E3E4A /* Assets.xcassets */,
+				8FC57F921BCBF7D8004E3E4A /* Main.storyboard */,
+				8FC57F951BCBF7D8004E3E4A /* Info.plist */,
+				8FBA9B0D1BCD91C100DE135B /* Startup.swift */,
+				8FBA9B0F1BCD99D800DE135B /* System.swift */,
+				8FBA9B111BCD9A6400DE135B /* Extensions.swift */,
+				8FBA9B131BCE53B000DE135B /* Icon.swift */,
+				8FBA9B151BCE548700DE135B /* Constant.swift */,
+			);
+			path = DockShredder;
+			sourceTree = "<group>";
+		};
+		8FC57F9D1BCBF7D8004E3E4A /* DockShredderTests */ = {
+			isa = PBXGroup;
+			children = (
+				8FC57F9E1BCBF7D8004E3E4A /* DockShredderTests.swift */,
+				8FC57FA01BCBF7D8004E3E4A /* Info.plist */,
+			);
+			path = DockShredderTests;
+			sourceTree = "<group>";
+		};
+		8FC57FA81BCBF7D8004E3E4A /* DockShredderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8FC57FA91BCBF7D8004E3E4A /* DockShredderUITests.swift */,
+				8FC57FAB1BCBF7D8004E3E4A /* Info.plist */,
+			);
+			path = DockShredderUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8FC57F881BCBF7D8004E3E4A /* DockShredder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FC57FAE1BCBF7D8004E3E4A /* Build configuration list for PBXNativeTarget "DockShredder" */;
+			buildPhases = (
+				8FC57F851BCBF7D8004E3E4A /* Sources */,
+				8FC57F861BCBF7D8004E3E4A /* Frameworks */,
+				8FC57F871BCBF7D8004E3E4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DockShredder;
+			productName = DockShredder;
+			productReference = 8FC57F891BCBF7D8004E3E4A /* DockShredder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8FC57F991BCBF7D8004E3E4A /* DockShredderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FC57FB11BCBF7D8004E3E4A /* Build configuration list for PBXNativeTarget "DockShredderTests" */;
+			buildPhases = (
+				8FC57F961BCBF7D8004E3E4A /* Sources */,
+				8FC57F971BCBF7D8004E3E4A /* Frameworks */,
+				8FC57F981BCBF7D8004E3E4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8FC57F9C1BCBF7D8004E3E4A /* PBXTargetDependency */,
+			);
+			name = DockShredderTests;
+			productName = DockShredderTests;
+			productReference = 8FC57F9A1BCBF7D8004E3E4A /* DockShredderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8FC57FA41BCBF7D8004E3E4A /* DockShredderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FC57FB41BCBF7D8004E3E4A /* Build configuration list for PBXNativeTarget "DockShredderUITests" */;
+			buildPhases = (
+				8FC57FA11BCBF7D8004E3E4A /* Sources */,
+				8FC57FA21BCBF7D8004E3E4A /* Frameworks */,
+				8FC57FA31BCBF7D8004E3E4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8FC57FA71BCBF7D8004E3E4A /* PBXTargetDependency */,
+			);
+			name = DockShredderUITests;
+			productName = DockShredderUITests;
+			productReference = 8FC57FA51BCBF7D8004E3E4A /* DockShredderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8FC57F811BCBF7D8004E3E4A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = Janalis;
+				TargetAttributes = {
+					8FC57F881BCBF7D8004E3E4A = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					8FC57F991BCBF7D8004E3E4A = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 8FC57F881BCBF7D8004E3E4A;
+					};
+					8FC57FA41BCBF7D8004E3E4A = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 8FC57F881BCBF7D8004E3E4A;
+					};
+				};
+			};
+			buildConfigurationList = 8FC57F841BCBF7D8004E3E4A /* Build configuration list for PBXProject "DockShredder" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				fr,
+				de,
+			);
+			mainGroup = 8FC57F801BCBF7D8004E3E4A;
+			productRefGroup = 8FC57F8A1BCBF7D8004E3E4A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8FC57F881BCBF7D8004E3E4A /* DockShredder */,
+				8FC57F991BCBF7D8004E3E4A /* DockShredderTests */,
+				8FC57FA41BCBF7D8004E3E4A /* DockShredderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8FC57F871BCBF7D8004E3E4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FBA9B2E1BCE696000DE135B /* frame6.png in Resources */,
+				8FBA9B311BCE696000DE135B /* frame9.png in Resources */,
+				8FBA9B291BCE696000DE135B /* frame1.png in Resources */,
+				8FBA9B281BCE696000DE135B /* frame0.png in Resources */,
+				8FBA9B2D1BCE696000DE135B /* frame5.png in Resources */,
+				8FBA9B2F1BCE696000DE135B /* frame7.png in Resources */,
+				8FBA9B2A1BCE696000DE135B /* frame2.png in Resources */,
+				8FBA9B2B1BCE696000DE135B /* frame3.png in Resources */,
+				8FBA9B2C1BCE696000DE135B /* frame4.png in Resources */,
+				8FBA9B301BCE696000DE135B /* frame8.png in Resources */,
+				8FC57F911BCBF7D8004E3E4A /* Assets.xcassets in Resources */,
+				8FC57FB91BCC1B21004E3E4A /* Localizable.strings in Resources */,
+				8FC57F941BCBF7D8004E3E4A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FC57F981BCBF7D8004E3E4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FC57FA31BCBF7D8004E3E4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8FC57F851BCBF7D8004E3E4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FBA9B161BCE548700DE135B /* Constant.swift in Sources */,
+				8FBA9B141BCE53B000DE135B /* Icon.swift in Sources */,
+				8FBA9B121BCD9A6400DE135B /* Extensions.swift in Sources */,
+				8FBA9B0E1BCD91C100DE135B /* Startup.swift in Sources */,
+				8FC57F8F1BCBF7D8004E3E4A /* PreferencesViewController.swift in Sources */,
+				8FC57F8D1BCBF7D8004E3E4A /* AppDelegate.swift in Sources */,
+				8FBA9B101BCD99D800DE135B /* System.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FC57F961BCBF7D8004E3E4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FC57F9F1BCBF7D8004E3E4A /* DockShredderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FC57FA11BCBF7D8004E3E4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FC57FAA1BCBF7D8004E3E4A /* DockShredderUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8FC57F9C1BCBF7D8004E3E4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FC57F881BCBF7D8004E3E4A /* DockShredder */;
+			targetProxy = 8FC57F9B1BCBF7D8004E3E4A /* PBXContainerItemProxy */;
+		};
+		8FC57FA71BCBF7D8004E3E4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FC57F881BCBF7D8004E3E4A /* DockShredder */;
+			targetProxy = 8FC57FA61BCBF7D8004E3E4A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8FC57F921BCBF7D8004E3E4A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FBA9B061BCD490800DE135B /* fr */,
+				8FBA9B071BCD490800DE135B /* de */,
+				8FBA9B0A1BCD492500DE135B /* en */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8FC57FBB1BCC1B21004E3E4A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FBA9B011BCD40DF00DE135B /* fr */,
+				8FBA9B031BCD40E500DE135B /* de */,
+				8FBA9B091BCD491A00DE135B /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8FC57FAC1BCBF7D8004E3E4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8FC57FAD1BCBF7D8004E3E4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8FC57FAF1BCBF7D8004E3E4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = DockShredder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.janalis.DockShredder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8FC57FB01BCBF7D8004E3E4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = DockShredder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.janalis.DockShredder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8FC57FB21BCBF7D8004E3E4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = DockShredderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.janalis.DockShredderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DockShredder.app/Contents/MacOS/DockShredder";
+			};
+			name = Debug;
+		};
+		8FC57FB31BCBF7D8004E3E4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = DockShredderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.janalis.DockShredderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DockShredder.app/Contents/MacOS/DockShredder";
+			};
+			name = Release;
+		};
+		8FC57FB51BCBF7D8004E3E4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = DockShredderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.janalis.DockShredderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DockShredder;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		8FC57FB61BCBF7D8004E3E4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = DockShredderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.janalis.DockShredderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DockShredder;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8FC57F841BCBF7D8004E3E4A /* Build configuration list for PBXProject "DockShredder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FC57FAC1BCBF7D8004E3E4A /* Debug */,
+				8FC57FAD1BCBF7D8004E3E4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FC57FAE1BCBF7D8004E3E4A /* Build configuration list for PBXNativeTarget "DockShredder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FC57FAF1BCBF7D8004E3E4A /* Debug */,
+				8FC57FB01BCBF7D8004E3E4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FC57FB11BCBF7D8004E3E4A /* Build configuration list for PBXNativeTarget "DockShredderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FC57FB21BCBF7D8004E3E4A /* Debug */,
+				8FC57FB31BCBF7D8004E3E4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FC57FB41BCBF7D8004E3E4A /* Build configuration list for PBXNativeTarget "DockShredderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FC57FB51BCBF7D8004E3E4A /* Debug */,
+				8FC57FB61BCBF7D8004E3E4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8FC57F811BCBF7D8004E3E4A /* Project object */;
+}

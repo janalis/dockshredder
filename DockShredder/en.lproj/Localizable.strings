@@ -1,0 +1,14 @@
+/* 
+  DockShredder.strings
+  DockShredder
+
+  Created by Pierre Hennequart on 12/10/2015.
+  Copyright © 2015 Janalis. All rights reserved.
+ */
+"confirm.delete.file" = "Data of the file will not be recoverable. Continue?";
+"confirm.delete.files" = "Data of the files will not be recoverable. Continue?";
+"confirm.option.startup" = "Application was added to startup items.\nTo activate it, go to System Preferences > Accounts > Login items.";
+"alert.file.deleted" = "The file was successfully deleted!";
+"alert.files.deleted" = "The files were successfully deleted!";
+"button.ok" = "OK";
+"button.cancel" = "Cancel";

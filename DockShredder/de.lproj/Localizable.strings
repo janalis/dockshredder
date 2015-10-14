@@ -1,0 +1,14 @@
+/* 
+  DockShredder.strings
+  DockShredder
+
+  Created by Pierre Hennequart on 12/10/2015.
+  Copyright © 2015 Janalis. All rights reserved.
+*/
+"confirm.delete.file" = "Daten der Datei werden nicht mehr erzielbar ist. Weiter ?";
+"confirm.delete.files" = "Daten der Dateien werden nicht wiederhergestellt werden. Weiter ?";
+"confirm.option.startup" = "Der Antrag wurde an der Systemstartelemente hinzugefügt.\nUm es zu aktivieren, gehen um Systemeinstellungen > Benutzer > Anmeldeobjekte";
+"alert.file.deleted" = "Die Datei wurde erfolgreich gelöscht !";
+"alert.files.deleted" = "Die Dateien wurden erfolgreich gelöscht !";
+"button.ok" = "OK";
+"button.cancel" = "Absagen";
