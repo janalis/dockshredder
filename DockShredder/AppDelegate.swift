@@ -66,7 +66,7 @@ class AppDelegate: NSObject, NSApplicationDelegate
             }
             icon.startAnimation()
             for file in files {
-                deletePath(file.path!)
+                shredPath(file.path!)
             }
             icon.stopAnimation()
             if notify {
@@ -90,7 +90,7 @@ class AppDelegate: NSObject, NSApplicationDelegate
             return false
         }
         icon.startAnimation()
-        deletePath(filename)
+        shredPath(filename)
         icon.stopAnimation()
         if notify {
             System.pushNotification("alert.file.deleted".localized)
@@ -114,11 +114,33 @@ class AppDelegate: NSObject, NSApplicationDelegate
         }
         icon.startAnimation()
         for filename in filenames {
-            deletePath(filename)
+            shredPath(filename)
         }
         icon.stopAnimation()
         if notify {
             System.pushNotification(filenames.count > 1 ? "alert.files.deleted".localized : "alert.file.deleted".localized)
+        }
+    }
+    
+    /**
+     * Delete path
+     *
+     * @param String path
+     */
+    func shredPath(path: String)
+    {
+        let fileManager = NSFileManager.defaultManager()
+        var isDirectory: ObjCBool = ObjCBool(false)
+        if fileManager.fileExistsAtPath(path, isDirectory: &isDirectory) {
+            if isDirectory {
+                let enumerator:NSDirectoryEnumerator = fileManager.enumeratorAtPath(path)!
+                while let element = enumerator.nextObject() as? String {
+                    shredPath(path + "/" + element)
+                }
+                deleteFolder(path)
+            } else {
+                shredFile(NSURL(fileURLWithPath: path))
+            }
         }
     }
     
@@ -200,28 +222,6 @@ class AppDelegate: NSObject, NSApplicationDelegate
         dd.arguments = ["if=/dev/urandom", "bs=\(bytes)", "count=\(bytes)", "of=\(path)"]
         dd.launch()
         dd.waitUntilExit()
-    }
-    
-    /**
-     * Delete path
-     *
-     * @param String path
-     */
-    func deletePath(path: String)
-    {
-        let fileManager = NSFileManager.defaultManager()
-        var isDirectory: ObjCBool = ObjCBool(false)
-        if fileManager.fileExistsAtPath(path, isDirectory: &isDirectory) {
-            if isDirectory {
-                let enumerator:NSDirectoryEnumerator = fileManager.enumeratorAtPath(path)!
-                while let element = enumerator.nextObject() as? String {
-                    deletePath(path + "/" + element)
-                }
-                deleteFolder(path)
-            } else {
-                shredFile(NSURL(fileURLWithPath: path))
-            }
-        }
     }
     
     /**
