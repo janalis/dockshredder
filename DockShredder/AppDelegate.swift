@@ -53,10 +53,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     {
         let confirm: Bool = NSUserDefaults.standardUserDefaults().boolForKey(Constant.optionAskForConfirmationBeforeDeletion)
         let notify: Bool = NSUserDefaults.standardUserDefaults().boolForKey(Constant.optionSendNotificationAfterDeletion)
-        var errors = 0
         let openPanel = NSOpenPanel()
         openPanel.canChooseFiles = true
         openPanel.canCreateDirectories = true
+        openPanel.canChooseDirectories = true
         openPanel.directoryURL = nil
         openPanel.allowedFileTypes = nil
         if openPanel.runModal() == NSModalResponseOK {
@@ -66,13 +66,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             }
             icon.startAnimation()
             for file in files {
-                errors = errors + Int(shredFile(file))
+                deletePath(file.path!)
             }
             icon.stopAnimation()
             if notify {
-                if errors == 0 {
-                    System.pushNotification(files.count > 1 ? "alert.files.deleted".localized : "alert.file.deleted".localized)
-                }
+                System.pushNotification(files.count > 1 ? "alert.files.deleted".localized : "alert.file.deleted".localized)
             }
         }
     }
@@ -92,17 +90,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             return false
         }
         icon.startAnimation()
-        if shredFile(NSURL(fileURLWithPath: filename)) {
-            if notify {
-                System.pushNotification("alert.file.deleted".localized)
-            }
-            icon.stopAnimation()
-            
-            return true
-        }
+        deletePath(filename)
         icon.stopAnimation()
-        
-        return false
+        if notify {
+            System.pushNotification("alert.file.deleted".localized)
+        }
+            
+        return true
     }
     
     /**
@@ -115,19 +109,16 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     {
         let confirm: Bool = NSUserDefaults.standardUserDefaults().boolForKey(Constant.optionAskForConfirmationBeforeDeletion)
         let notify: Bool = NSUserDefaults.standardUserDefaults().boolForKey(Constant.optionSendNotificationAfterDeletion)
-        var errors = 0
         if confirm && !System.confirm(filenames.count > 1 ? "confirm.delete.files".localized : "confirm.delete.file".localized) {
             return
         }
         icon.startAnimation()
         for filename in filenames {
-            errors = errors + Int(shredFile(NSURL(fileURLWithPath: filename)))
+            deletePath(filename)
         }
         icon.stopAnimation()
         if notify {
-            if errors == 0 {
-                System.pushNotification(filenames.count > 1 ? "alert.files.deleted".localized : "alert.file.deleted".localized)
-            }
+            System.pushNotification(filenames.count > 1 ? "alert.files.deleted".localized : "alert.file.deleted".localized)
         }
     }
     
@@ -209,6 +200,42 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         dd.arguments = ["if=/dev/urandom", "bs=\(bytes)", "count=\(bytes)", "of=\(path)"]
         dd.launch()
         dd.waitUntilExit()
+    }
+    
+    /**
+     * Delete path
+     *
+     * @param String path
+     */
+    func deletePath(path: String)
+    {
+        let fileManager = NSFileManager.defaultManager()
+        var isDirectory: ObjCBool = ObjCBool(false)
+        if fileManager.fileExistsAtPath(path, isDirectory: &isDirectory) {
+            if isDirectory {
+                let enumerator:NSDirectoryEnumerator = fileManager.enumeratorAtPath(path)!
+                while let element = enumerator.nextObject() as? String {
+                    deletePath(path + "/" + element)
+                }
+                deleteFolder(path)
+            } else {
+                shredFile(NSURL(fileURLWithPath: path))
+            }
+        }
+    }
+    
+    /**
+     * Delete a folder
+     *
+     * @param String path
+     */
+    func deleteFolder(path: String)
+    {
+        let rm = NSTask()
+        rm.launchPath = "/bin/rm"
+        rm.arguments = ["-r", "\(path)"]
+        rm.launch()
+        rm.waitUntilExit()
     }
     
     /**
