@@ -123,7 +123,7 @@ class AppDelegate: NSObject, NSApplicationDelegate
     }
     
     /**
-     * Delete path
+     * Shred a path
      *
      * @param String path
      */
