@@ -2,7 +2,7 @@ DockShredder
 ============
 
 ```
-licence: MIT
+liscence: MIT
 language: Swift
 platform: Mac OSX 10.10+
 ```
