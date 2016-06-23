@@ -9,7 +9,17 @@
 import Cocoa
 
 class PreferencesViewController: NSViewController
-{    
+{
+    
+    /**
+     * Click on Feedback button
+     *
+     * @param AnyObject sender
+     */
+    @IBAction func showFeedbackDialog(sender: AnyObject?)  {
+        DevMateKit.showFeedbackDialog(nil, inMode: DMFeedbackMode.IndependentMode)
+    }
+    
     /**
      * Click on launch at login option
      *

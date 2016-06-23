@@ -31,6 +31,9 @@ class AppDelegate: NSObject, NSApplicationDelegate
             Startup.setLaunchAtStartup(false)
             NSUserDefaults.standardUserDefaults().setBool(false, forKey: Constant.optionLaunchAtLogin)
         }
+        // DevMate Tracking
+        DevMateKit.sendTrackingReport(nil, delegate: nil)
+        DevMateKit.setupIssuesController(nil, reportingUnhandledIssues: true)
     }
 
     /**

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="8191"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10117"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -115,12 +115,11 @@
             <objects>
                 <viewController id="fqM-XF-WwO" customClass="PreferencesViewController" customModule="DockShredder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="WAo-Kv-0JX">
-                        <rect key="frame" x="0.0" y="0.0" width="516" height="94"/>
+                        <rect key="frame" x="0.0" y="0.0" width="516" height="135"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dPj-PS-Xia">
-                                <rect key="frame" x="18" y="58" width="284" height="18"/>
-                                <animations/>
+                                <rect key="frame" x="18" y="99" width="284" height="18"/>
                                 <buttonCell key="cell" type="check" title="Beim Start ausgeführt" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="ntV-QX-bqz">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -135,8 +134,7 @@
                                 </connections>
                             </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3pg-b8-RWP">
-                                <rect key="frame" x="18" y="38" width="271" height="18"/>
-                                <animations/>
+                                <rect key="frame" x="18" y="79" width="271" height="18"/>
                                 <buttonCell key="cell" type="check" title="Stellen zur Bestätigung vor dem Löschen" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="MEQ-Hs-N6l">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -150,8 +148,7 @@
                                 </connections>
                             </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sa8-zw-6dH">
-                                <rect key="frame" x="18" y="18" width="480" height="18"/>
-                                <animations/>
+                                <rect key="frame" x="18" y="59" width="480" height="18"/>
                                 <buttonCell key="cell" type="check" title="Senden eine Benachrichtigung, sobald der Löschvorgang abgeschlossen ist" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="75X-77-GRZ">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -164,14 +161,34 @@
                                     </binding>
                                 </connections>
                             </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fa9-gn-Ceq">
+                                <rect key="frame" x="162" y="13" width="127" height="32"/>
+                                <buttonCell key="cell" type="push" title="Aktualisierung" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="0cL-1r-DFq">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="checkForUpdates:" target="AtU-Fm-TEh" id="yad-8H-6Tx"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FXp-c3-0NL">
+                                <rect key="frame" x="14" y="13" width="148" height="32"/>
+                                <buttonCell key="cell" type="push" title="Feedback senden" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="lLX-Xg-Meo">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="showFeedbackDialog:" target="fqM-XF-WwO" id="2Ha-Tg-J00"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <animations/>
                     </view>
                 </viewController>
                 <customObject id="M6Y-zs-if2" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
                 <userDefaultsController representsSharedInstance="YES" id="tyX-te-ARn"/>
+                <customObject id="AtU-Fm-TEh" customClass="SUUpdater"/>
             </objects>
-            <point key="canvasLocation" x="146" y="562"/>
+            <point key="canvasLocation" x="146" y="582.5"/>
         </scene>
     </scenes>
 </document>

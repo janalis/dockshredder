@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="8191"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10117"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -115,12 +115,11 @@
             <objects>
                 <viewController id="fqM-XF-WwO" customClass="PreferencesViewController" customModule="DockShredder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="WAo-Kv-0JX">
-                        <rect key="frame" x="0.0" y="0.0" width="354" height="94"/>
+                        <rect key="frame" x="0.0" y="0.0" width="354" height="135"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3pg-b8-RWP">
-                                <rect key="frame" x="18" y="38" width="284" height="18"/>
-                                <animations/>
+                                <rect key="frame" x="18" y="79" width="284" height="18"/>
                                 <buttonCell key="cell" type="check" title="Ask for confirmation before deletion" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="MEQ-Hs-N6l">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -134,8 +133,7 @@
                                 </connections>
                             </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dPj-PS-Xia">
-                                <rect key="frame" x="18" y="58" width="276" height="18"/>
-                                <animations/>
+                                <rect key="frame" x="18" y="99" width="276" height="18"/>
                                 <buttonCell key="cell" type="check" title="Launch at login" bezelStyle="regularSquare" imagePosition="left" alignment="left" state="on" inset="2" id="ntV-QX-bqz">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -150,8 +148,7 @@
                                 </connections>
                             </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BmP-bI-mPF">
-                                <rect key="frame" x="18" y="18" width="318" height="18"/>
-                                <animations/>
+                                <rect key="frame" x="18" y="59" width="318" height="18"/>
                                 <buttonCell key="cell" type="check" title="Send a notification once the deletion is complete" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="yoJ-BG-HTL">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -164,14 +161,34 @@
                                     </binding>
                                 </connections>
                             </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TOM-hH-kMg">
+                                <rect key="frame" x="14" y="13" width="100" height="32"/>
+                                <buttonCell key="cell" type="push" title="Feedback" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="T4y-5h-Lkg">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="showFeedbackDialog:" target="fqM-XF-WwO" id="ir0-Y2-vHs"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M4M-9v-6aM">
+                                <rect key="frame" x="114" y="13" width="152" height="32"/>
+                                <buttonCell key="cell" type="push" title="Check for updates" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="G4r-PK-Lce">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="checkForUpdates:" target="qSN-KO-BfB" id="P6Y-SA-XS1"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <animations/>
                     </view>
                 </viewController>
                 <customObject id="M6Y-zs-if2" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
                 <userDefaultsController representsSharedInstance="YES" id="iml-7U-7Kq"/>
+                <customObject id="qSN-KO-BfB" customClass="SUUpdater"/>
             </objects>
-            <point key="canvasLocation" x="146" y="559"/>
+            <point key="canvasLocation" x="146" y="579.5"/>
         </scene>
     </scenes>
 </document>

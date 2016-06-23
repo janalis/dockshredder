@@ -20,7 +20,7 @@ class Icon: NSObject
     func startAnimation()
     {
         stopAnimation()
-        timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "animate", userInfo: nil, repeats: true)
+        timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: #selector(animate), userInfo: nil, repeats: true)
     }
     
     /**
@@ -39,7 +39,7 @@ class Icon: NSObject
     func animate()
     {
         setIcon(frameset[current])
-        current++
+        current = current + 1
         if current >= frameset.count {
             current = 0
         }
